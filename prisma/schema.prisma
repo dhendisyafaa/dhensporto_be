@@ -16,5 +16,6 @@ model Project {
   project_description_short String
   project_description       String
   project_url               String
+  project_repository_url    String
   project_thumbnail         String
 }

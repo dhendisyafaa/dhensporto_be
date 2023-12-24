@@ -1,5 +1,6 @@
 import {
   deleteProject,
+  editProject,
   findProjectById,
   findProjects,
   insertProject,
@@ -30,7 +31,7 @@ export const createProject = async (newProjectData) => {
 export const editProjectById = async (id, projectData) => {
   await getProjectById(id);
 
-  const project = await editProjectById(id, projectData);
+  const project = await editProject(id, projectData);
 
   return project;
 };

@@ -12,7 +12,6 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   try {
     const projects = await getAllProjects();
-
     res.send(projects);
   } catch (err) {
     res.status(400).send(err.message);
